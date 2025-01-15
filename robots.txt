@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://seebox.app/sitemap.xml
