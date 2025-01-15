@@ -11,6 +11,7 @@ import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://seebox.app"),
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
