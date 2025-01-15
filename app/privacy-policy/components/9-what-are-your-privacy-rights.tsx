@@ -17,7 +17,8 @@ export const WhatAreYourPrivacyRights = () => {
         and/or implied consent depending on the applicable law, you have the
         right to withdraw your consent at any time. You can withdraw your
         consent at any time by contacting us using the contact details provided
-        in the section "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" below.
+        in the section &#34;HOW CAN YOU CONTACT US ABOUT THIS NOTICE?&#34;
+        below.
       </p>
 
       <p>

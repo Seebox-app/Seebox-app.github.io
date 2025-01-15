@@ -59,7 +59,7 @@ export const WhatWeCollect = () => {
           social media account. If you choose to register in this way, we will
           collect certain profile information about you from the social media
           provider, as described in the section called{" "}
-          <strong>"HOW DO WE HANDLE YOUR SOCIAL LOGINS?"</strong> below.
+          <strong>&#34;HOW DO WE HANDLE YOUR SOCIAL LOGINS?&#34;</strong> below.
         </p>
         <h3 className="font-medium">Application Data</h3>
         <p>

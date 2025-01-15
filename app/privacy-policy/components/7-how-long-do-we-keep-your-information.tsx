@@ -20,7 +20,7 @@ export const HowLongDoWeKeepYourInformation = () => {
         longer retention period is required or permitted by law (such as tax,
         accounting, or other legal requirements). No purpose in this notice will
         require us keeping your personal information for longer than three (3)
-        months past the termination of the user's account.
+        months past the termination of the user&#39;s account.
       </p>
 
       <p>
