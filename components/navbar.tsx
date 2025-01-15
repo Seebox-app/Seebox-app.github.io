@@ -45,7 +45,7 @@ export const Navbar: React.FC = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo className="text-default-950" height={50} width={200} />
+            <Logo className="text-default-950" height={30} width={138} />
             <h1 className="font-bold text-inherit sr-only">SeeBox</h1>
           </NextLink>
         </NavbarBrand>
