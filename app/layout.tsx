@@ -73,17 +73,6 @@ const organization: Organization = {
     "Payment Solutions",
     "Tracking Systems",
   ],
-  offers: [
-    {
-      "@type": "Offer",
-      name: "Pro Subscription",
-      price: "9.99",
-      priceCurrency: "USD",
-      description:
-        "Unlock premium tools and features to enhance your social commerce experience.",
-      availability: "https://schema.org/InStock",
-    },
-  ],
   mainEntityOfPage: [
     {
       "@type": "WebPage",
