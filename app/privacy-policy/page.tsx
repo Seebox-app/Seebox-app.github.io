@@ -1,4 +1,5 @@
-import { Link } from "@nextui-org/link";
+import { Link } from "@heroui/link";
+import { Metadata } from "next";
 
 import { WhatWeCollect } from "@/app/privacy-policy/components/1-what-information-do-we-collect";
 import { HowDoWeProcessYourInformation } from "@/app/privacy-policy/components/2-how-do-we-process-your-information";
@@ -14,7 +15,12 @@ import { DoWeMakeUpdatesToThisNotice } from "@/app/privacy-policy/components/11-
 import { HowCanYouContactUsAboutThisNotice } from "@/app/privacy-policy/components/12-how-can-you-contact-us-about-this-notice";
 import { HowCanYouReviewUpdateOrDeleteTheDataWeCollectFromYou } from "@/app/privacy-policy/components/13-how-can-you-review-update-or-delete-the-data-we-collect-from-you";
 import { TableOfContent } from "@/app/privacy-policy/components/table-of-content";
-
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
 export default function PrivacyPolicyPage() {
   return (
     <div className="p-8 bg-gray-50 text-gray-800">

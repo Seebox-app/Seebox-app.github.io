@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
+import { Link } from "@heroui/link";
 import clsx from "clsx";
 import { DateTime } from "luxon";
 
@@ -12,6 +12,9 @@ import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://seebox.app"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,

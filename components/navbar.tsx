@@ -7,16 +7,17 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
-} from "@nextui-org/navbar";
-import { Link } from "@nextui-org/link";
-import { link as linkStyles } from "@nextui-org/theme";
+} from "@heroui/navbar";
+import { Link } from "@heroui/link";
+import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
+import { FaGithub, FaInstagram } from "react-icons/fa6";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon, Logo } from "@/components/icons";
+import { Logo } from "@/components/icons";
 
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
@@ -73,7 +74,14 @@ export const Navbar: React.FC = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
+            <FaGithub className="text-default-500" size="24" />
+          </Link>
+          <Link
+            isExternal
+            aria-label="Instagram"
+            href={siteConfig.links.instagram}
+          >
+            <FaInstagram className="text-default-500" size="24" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -81,7 +89,14 @@ export const Navbar: React.FC = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+          <FaGithub className="text-default-500" size="24" />
+        </Link>
+        <Link
+          isExternal
+          aria-label="Instagram"
+          href={siteConfig.links.instagram}
+        >
+          <FaInstagram className="text-default-500" size="24" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />

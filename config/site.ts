@@ -25,9 +25,7 @@ export const siteConfig = {
   ],
   links: {
     github: "https://github.com/Seebox-app",
+    instagram: "https://www.instagram.com/seebox.app",
     twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
   },
 };
