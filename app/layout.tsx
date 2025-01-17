@@ -3,6 +3,7 @@ import { Metadata, Viewport } from "next";
 import { Link } from "@heroui/link";
 import clsx from "clsx";
 import { DateTime } from "luxon";
+import { Organization } from "schema-dts";
 
 import { Providers } from "./providers";
 
@@ -31,6 +32,74 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
 };
+const organization: Organization = {
+  "@type": "Organization",
+  name: "SeeBox",
+  disambiguatingDescription:
+    "A platform enhancing social network interactions and commerce.",
+  url: "https://seebox.app",
+  logo: "https://seebox.app/logo.jpg",
+  foundingDate: "2025-01-01",
+  founder: "SeeBox Team",
+  description:
+    "SeeBox.app revolutionizes social network experiences by integrating advanced tools for seamless commerce and interaction.",
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      email: "contact@seebox.app",
+      contactType: "Customer Support",
+      availableLanguage: ["English", "Persian"],
+    },
+    {
+      "@type": "ContactPoint",
+      email: "info@seebox.app",
+      contactType: "Business Inquiries",
+      availableLanguage: ["English", "Persian"],
+    },
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Tehran",
+    addressCountry: "Iran",
+  },
+  sameAs: [
+    "https://www.instagram.com/seebox.app",
+    "https://github.com/Seebox-app",
+  ],
+  knowsAbout: [
+    "Social Media Integration",
+    "Retail Data Analysis",
+    "E-commerce Tools",
+    "Payment Solutions",
+    "Tracking Systems",
+  ],
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Pro Subscription",
+      price: "9.99",
+      priceCurrency: "USD",
+      description:
+        "Unlock premium tools and features to enhance your social commerce experience.",
+      availability: "https://schema.org/InStock",
+    },
+  ],
+  mainEntityOfPage: [
+    {
+      "@type": "WebPage",
+      "@id": "https://seebox.app/privacy-policy",
+      name: "Privacy Policy",
+      description: "Learn more privacy policy of SeeBox.",
+    },
+  ],
+  keywords: [
+    "Social Network",
+    "E-commerce",
+    "Instagram Integration",
+    "Retail Data",
+    "Tracking Tools",
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -39,7 +108,12 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <head>
+        <script
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
+          type="application/ld+json"
+        />
+      </head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
