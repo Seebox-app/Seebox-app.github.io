@@ -12,6 +12,10 @@ export const siteConfig = {
       label: "Privacy Policy",
       href: "/privacy-policy",
     },
+    {
+      label: "Cookies Policy",
+      href: "/cookies",
+    },
   ],
   navMenuItems: [
     {
@@ -21,6 +25,10 @@ export const siteConfig = {
     {
       label: "Privacy Policy",
       href: "/privacy-policy",
+    },
+    {
+      label: "Cookies Policy",
+      href: "/cookies",
     },
   ],
   links: {

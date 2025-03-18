@@ -80,6 +80,12 @@ const organization: Organization = {
       name: "Privacy Policy",
       description: "Learn more privacy policy of SeeBox.",
     },
+    {
+      "@type": "WebPage",
+      "@id": "https://seebox.app/cookies",
+      name: "Cookies Policy",
+      description: "Learn more cookies policy of SeeBox.",
+    },
   ],
   keywords: [
     "Social Network",
